@@ -43,7 +43,7 @@ PLAIN_COPY_DIRECTORIES = Split("""
 
 
 STITCHED_IMAGES = ()
-    '''dict(
+''' dict(
         target='image/icon/nav.png',
         sources=Split("""
             image/logo/logo.png
