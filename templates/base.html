@@ -1,0 +1,52 @@
+{% extends "base_site.html" %}
+
+{% block tag_head %}
+    <meta name="keywords" content="Greatship, Greatship India, Greatship Group, The Greatship Group, Greatship India Limited, Greatship India Ltd, shipping, India, logistics, offshore, rig, offshore construction, fleet, ship, global energy, global, dubai, south-east asia, south africe, mexican gulf, arabian sea, bombay high, oil rig, GGOS, GGES, GIL, greatship holdings, mauritius, singapore, mumbai" />
+    <meta name="description" content="The Greatship Group is a global energy and offshore services provider." /> 
+	<link type="application/atom+xml" rel="alternate" title="Greatship Group Press Releases &raquo; Feed" href="/press/feed/atom.xml" />
+	{% block tag_stylesheets %}
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/screen-all{{ CSS_MINIFIED }}.css" type="text/css" media="screen,projection" charset="utf-8" />
+    <!--[if lt IE 7]>
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/ie6{{CSS_MINIFIED}}.css" type="text/css" media="screen,projection" charset="utf-8" />
+    <![endif]-->
+	{% end %}
+	{% block tag_additional_stylesheets %}{% end %}
+{% end %}
+
+{% block tag_body %}
+	{% block tag_wrapper %}
+	<div id="wrapper">
+		{% block tag_wrapper_content %}
+		{% block tag_header %}
+		<div id="header">
+    </div>
+		{% end %}
+		{% block tag_trunk %}
+		<div id="trunk">
+			<div id="trunk-content">
+			{% block tag_trunk_content %}
+			{% end %}
+			</div>
+		</div>
+		{% end %}
+		{% block tag_footer %}
+		<div id="footer">
+			<div id="footer-content">
+			{% block tag_footer_content %}
+			{% end %}
+      </div>
+		</div>
+		{% end %}
+		{% end %}
+	</div>
+	{% end %}
+{% end %}
+{% block tag_scripts_base %}
+<script type="text/javascript">
+window.__hc_scripts = ["{{ JQUERY_URL }}"];
+</script>
+#*<!--[if lt IE 7]>
+<script type="text/javascript">window.IE6UPDATE_OPTIONS = {'icons_path': "{{ MEDIA_URL }}image/ie6update/"};
+window.__hc_scripts.push("{{ MEDIA_URL }}script/ie6update/ie6update{{ JS_MINIFIED }}.js");</script>
+<![endif]-->*#
+{% end %}
