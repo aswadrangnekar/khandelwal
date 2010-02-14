@@ -33,11 +33,43 @@ h2
   :font= "italic 21px/1.5" !font_stack_georgia
 h3
   :font= "bold 16px/1.5" !font_family_sans_serif_medium
-a
-  :color= !color_link
+//a
+//  :color= !color_link
+//  :text-decoration none
+//a:hover
+//  :color= !color_link_hover
+//  :text-decoration underline
+//a:visited
+//  :color= !color_link_visited 
+#wrapper
+  +grid-container
+  
+//--- Navigation styles ---//
+#header
+  :margin-top 50px
+#logo
+  :background= "transparent" !image_logo "no-repeat scroll 0px -36px"
+  :display block
+  :width 316px
+  :height 36px
+  :float left
+#navigation
+  :float right
+  li
+    +display-inline-block
+    :margin-right 10px
+    :width 110px
+.menu_button
+  :height 30px
+  :color white
+  :background= "transparent" !image_menu_button "no-repeat scroll 0px -40px"
+  :font-family= !font_stack_helvetica
   :text-decoration none
-a:hover
-  :color= !color_link_hover
-  :text-decoration underline
-a:visited
-  :color= !color_link_visited
+  :display block
+  :text-align center
+.menu_button:hover
+  :background-position 0px -5px
+.menu_button.active
+  :background-position 0px -70px
+  :height 40px
+  
