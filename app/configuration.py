@@ -35,10 +35,7 @@ EXTRA_LIB_PATH = [
     dirname(DIR_PATH),
     LIB_PATH,
     path_join(LIB_PATH, 'appengine'),
-    path_join(LIB_PATH, 'gaeutilities'),
-    path_join(LIB_PATH, 'jinja2'),
-    path_join(LIB_PATH, 'pyporter2'),
-    path_join(LIB_PATH, 'aeoid'),
+    path_join(LIB_PATH, 'tornado'),
 ]
 sys.path = EXTRA_LIB_PATH + sys.path
 
@@ -156,7 +153,6 @@ TEMPLATE_BUILTINS = {
     'ROOT_URL': sanitize_url(ROOT_URL),
     'TEMPLATE_DEBUG': DEBUG,
     'TEXT_MEDIA_URL': TEXT_MEDIA_URL,
-    'JOB_APPLICATION_FORM_URL': JOB_APPLICATION_FORM_URL,
 }
 
 # Directories in which to search for templates.
