@@ -23,6 +23,20 @@ SCRIPT_FILES = Split("""
 """)
 
 IMAGE_FILES = Split("""
+    image/bg/sky.jpg
+    image/bg/urban_landscape.jpg
+    image/button/menu.png
+    image/button/see_more.png
+    image/heading/we_build_value.png
+    image/logo/logo.png
+    image/photos/first_tax_free.jpg
+    image/photos/gokuldham.jpg
+    image/photos/prakash_tower.jpg
+    image/photos/pushpakunj.jpg
+    image/photos/sea_woods.jpg
+    image/photos/shashi.jpg
+
+
 """)
 
 CSS_FILES = Split("""

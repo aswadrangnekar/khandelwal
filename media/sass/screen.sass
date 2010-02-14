@@ -1,3 +1,43 @@
-
+/* Stylesheet for the screen.
+  Licensed under the terms of the MIT License.*/
+  
 @import base.sass
 
+body
+  :background= !color_background !image_body_background "repeat-x scroll 0 0"
+  :font= "1em/1.5" !font_family_serif
+  :color= !color_light_body_text
+p, blockquote, pre, li, dl
+  :line-height 1.5
+  :margin-bottom 1em
+  :font-size 1em
+p.intro
+  //:text-indent 2.5em
+  :font= "1.1em/1.5" !font_stack_georgia
+  :color= !color_light_body_text
+  >em:first-child
+    :font-variant small-caps
+    :font-size 1.2em
+h1, h2, h3
+  :color= !color_heading_text
+h1
+  :text-shadow 1px 1px 1px #fff
+  :font-size 2.5em
+  :font-weight normal
+  >span
+    :font-style italic
+    :color #e05f2c
+    :font-weight bold
+h2
+  :margin-top 2em
+  :font= "italic 21px/1.5" !font_stack_georgia
+h3
+  :font= "bold 16px/1.5" !font_family_sans_serif_medium
+a
+  :color= !color_link
+  :text-decoration none
+a:hover
+  :color= !color_link_hover
+  :text-decoration underline
+a:visited
+  :color= !color_link_visited
