@@ -1,3 +1,6 @@
 [submodule "app/lib/tornado"]
 	path = app/lib/tornado
 	url = git://github.com/facebook/tornado.git
+[submodule "media/script/lib/chickoojs"]
+	path = media/script/lib/chickoojs
+	url = git://github.com/yesudeep/chickoojs.git
