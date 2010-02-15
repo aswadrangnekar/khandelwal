@@ -1,6 +1,52 @@
 {% extends "base.html" %}
 
+
+{% block nav_contact_class %}active{% end %}
+
 {% block tag_trunk_content %}
+<h1>Get in touch with us</h1>
+<dl>
+  <dt>Corporate office</dt>
+  <dd>
+    <address>Narayan Plaza, 135, Ram Mandir Rd., Near Singh Industrial Estate, Oshiwara, Goregaon (W), Mumbai 400104.</address>
+    <p>Telephone: 26760223 / 263 / 184 / 185, Fax: 26760072</p>
+  </dd>
+  <dt>City office</dt>
+  <dd>
+    <address>38, Bombay Mutual Chambers, 19/21, Hamam Street, Near Bombay Stock Exchange, Fort, Mumbai 400021.</address>
+    <p>Telephone: 22632420 / 32947828</p>
+  </dd>
+</dl>
+<h2>Send us feedback</h2>
+<form id="form-feedback" action="" method="post" class="decorated-fields vertical">
+  <label for="full_name">
+    <span class="prefix">full name</span>
+    <input type="text" name="full_name" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="email">
+    <span class="prefix">email</span>
+    <input type="text" name="email" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="phone_number">
+    <span class="prefix">phone number</span>
+    <input type="text" name="phone_number" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="subject">
+    <span class="prefix">subject</span>
+    <input type="text" name="subject" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="comment">
+    <span class="prefix">comment</span>
+    <textarea name="comment" rows="10" cols="50"></textarea>
+    <span class="suffix"></span>
+  </label>
+  <input class="awesome-button large" type="submit" name="submit" value="&#10004; Send Information" />
+</form>
+
 {% end %}
 
 {% block tag_scripts %}

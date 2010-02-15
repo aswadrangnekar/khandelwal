@@ -1,6 +1,39 @@
 {% extends "base.html" %}
 
+{% block nav_inquiry_class %}active{% end %}
+
 {% block tag_trunk_content %}
+<h1>Need something?</h1>
+<p>Lorem ipsum.</p>
+<h2>Ask us.</h2>
+<form id="form-inquiry" action="" method="post" class="decorated-fields vertical">
+  <label for="full_name">
+    <span class="prefix">full name</span>
+    <input type="text" name="full_name" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="email">
+    <span class="prefix">email</span>
+    <input type="text" name="email" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="phone_number">
+    <span class="prefix">phone number</span>
+    <input type="text" name="phone_number" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="subject">
+    <span class="prefix">subject</span>
+    <input type="text" name="subject" value="" />
+    <span class="suffix"></span>
+  </label>
+  <label for="comment">
+    <span class="prefix">comment</span>
+    <textarea name="comment" rows="10" cols="50"></textarea>
+    <span class="suffix"></span>
+  </label>
+  <input class="awesome-button large" type="submit" name="submit" value="&#10004; Send Information" />
+</form>
 {% end %}
 
 {% block tag_scripts %}

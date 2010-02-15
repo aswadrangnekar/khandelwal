@@ -19,12 +19,12 @@
 		{% block tag_header %}
 		<div id="header">
 		  <a href="/" id="logo"></a>
-		  <ul id ="navigation">
-		    <li><a href="/" class="menu_button active">Home</a></li>
-		    <li><a href="/projects" class="menu_button">Projects</a></li>
-		    <li><a href="/about" class="menu_button">About us</a></li>
-		    <li><a href="/contact" class="menu_button">Contact</a></li>
-		    <li><a href="/inquiry" class="menu_button">Inquiry</a></li>		    
+		  <ul id="navigation">
+		    <li><a href="/" class="{% block nav_home_class %}{% end %}">Home</a></li>
+		    <li><a href="/projects" class="{% block nav_projects_class %}{% end %}">Projects</a></li>
+		    <li><a href="/about" class="{% block nav_about_class %}{% end %}">About us</a></li>
+		    <li><a href="/contact" class="{% block nav_contact_class %}{% end %}">Contact</a></li>
+		    <li><a href="/inquiry" class="{% block nav_inquiry_class %}{% end %}">Inquiry</a></li>		    
 		  </ul>
     </div>
 		{% end %}
@@ -40,7 +40,7 @@
 		<div id="footer">
 			<div id="footer-content">
 			{% block tag_footer_content %}
-			  <p>Copyright &copy; 2009 <a href="/">Khandelwal Group&eacute;.</a>. All rights reserved. Developed by <a href="http://www.aticest.com">Aticest</a> and designed by <a href="http://www.happychickoo.com">happychickoo</a>.</p>
+			  <p>Copyright &copy; 2009 <a href="/">Khandelwal Group&eacute;</a>. All rights reserved. Developed by <a href="http://www.aticest.com">Aticest</a> and designed by <a href="http://www.happychickoo.com">happychickoo</a>.</p>
 			{% end %}
       </div>
 		</div>

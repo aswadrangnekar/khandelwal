@@ -47,9 +47,45 @@ class ContactHandler(BaseRequestHandler):
     def get(self):
         self.render('contact.html')
 
+    def post(self):
+        full_name = self.get_argument('full_name')
+        email = self.get_argument('email')
+        phone_number = self.get_argument('phone_number')
+        subject = self.get_argument('subject')
+        comment = self.get_argument('comment')
+        
+        from models import Feedback
+        feedback = Feedback()
+        feedback.full_name = full_name
+        feedback.email = email
+        feedback.phone_number = phone_number
+        feedback.subject = subject
+        feedback.comment = comment
+        feedback.put()
+        
+        self.redirect("/")
+
 class InquiryHandler(BaseRequestHandler):
     def get(self):
         self.render('inquiry.html')
+
+    def post(self):
+        full_name = self.get_argument('full_name')
+        email = self.get_argument('email')
+        phone_number = self.get_argument('phone_number')
+        subject = self.get_argument('subject')
+        comment = self.get_argument('comment')
+
+        from models import Inquiry
+        inquiry = Inquiry()
+        inquiry.full_name = full_name
+        inquiry.email = email
+        inquiry.phone_number = phone_number
+        inquiry.subject = subject
+        inquiry.comment = comment
+        inquiry.put()
+
+        self.redirect("/")
 
 class ProjectsHandler(BaseRequestHandler):
     def get(self):
