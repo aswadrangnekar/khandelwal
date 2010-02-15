@@ -51,7 +51,13 @@
 {% end %}
 {% block tag_scripts_base %}
 <script type="text/javascript">
-window.__hc_scripts = ["{{ JQUERY_URL }}"];
+window.__hc_scripts = ["{{ JQUERY_URL }}" #*, 
+{% if LOCAL %}
+"{{ TEXT_MEDIA_URL }}script/lib/chickoojs/src/jquery/tools/1.1.2/jquery.tools.min.js"
+{% else %}
+"http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"
+{% end %}*#
+];
 </script>
 #*<!--[if lt IE 7]>
 <script type="text/javascript">window.IE6UPDATE_OPTIONS = {'icons_path': "{{ MEDIA_URL }}image/ie6update/"};

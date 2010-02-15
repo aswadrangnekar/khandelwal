@@ -125,7 +125,7 @@ SCRIPT_BUNDLES = (
         sources = Split(
         COMMON_SCRIPTS + 
         """
-            script/lib/chickoojs/src/jquery/tools/tools.tabs-1.0.3.js
+            script/lib/chickoojs/src/jquery/tools/1.1.2/jquery.tools.min.js
             script/projects.js
         """)
     ),
