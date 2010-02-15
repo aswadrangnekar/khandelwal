@@ -88,6 +88,7 @@ SCRIPT_BUNDLES = (
         sources = Split(
         COMMON_SCRIPTS + 
         """
+            script/lib/chickoojs/src/jquery/lightbox/0.5/js/jquery.lightbox-0.5.js
             script/index.js
         """)
     ),
@@ -129,6 +130,7 @@ CSS_BUNDLES = (
     dict(
         target="css/screen-all.css",
         sources = Split("""
+            script/lib/chickoojs/src/jquery/lightbox/0.5/css/jquery.lightbox-0.5.css
             css/screen.css
         """)
     ),
