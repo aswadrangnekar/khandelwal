@@ -35,6 +35,14 @@ IMAGE_FILES = Split("""
     image/photos/pushpakunj.jpg
     image/photos/sea_woods.jpg
     image/photos/shashi.jpg
+    image/photos/holar.jpg
+    image/photos/thumb/first_tax_free.jpg
+    image/photos/thumb/gokuldham.jpg
+    image/photos/thumb/prakash_tower.jpg
+    image/photos/thumb/pushpakunj.jpg
+    image/photos/thumb/sea_woods.jpg
+    image/photos/thumb/shashi.jpg
+    image/photos/thumb/holar.jpg
 
 
 """)
