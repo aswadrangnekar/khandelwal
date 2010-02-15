@@ -3,12 +3,8 @@
 
 import os
 from util import get_project_config
-from colorizer import colorizer
-
-col = colorizer()
 
 env = Environment(tools=['default', 'puppy_tools'])
-col.colorize(env)
 
 Export('env')
 
