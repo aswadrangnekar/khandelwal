@@ -5,15 +5,15 @@
 
 body
   :background= !color_background !image_footer_background "repeat-x scroll 0px 54px"
-  :font= "1em/1.5" !font_family_serif
+  :font= "1em" !font_family_serif
   :color= !color_light_body_text
 p, blockquote, pre, li, dl
   :line-height 1.5
   :margin-bottom 1em
-  :font-size 1em
+  :font-size 0.9em
 p.intro
   //:text-indent 2.5em
-  :font= "1.1em/1.5" !font_stack_georgia
+  :font= "0.9em" !font_stack_georgia
   :color= !color_light_body_text
   >em:first-child
     :font-variant small-caps
@@ -106,6 +106,8 @@ h3
   +grid(8, 12)
   :float left
   :text-align right
+  >h1
+    :font-size 2em
 .reversed
   :text-align left
 
@@ -170,7 +172,7 @@ h3
   +grid-container
   :font-size 0.8em
   :font-family= !font_stack_helvetica
-  :padding-top 200px
+  :padding-top 20px
   :text-align center
   p
     :background-color= rgba(0, 0, 0, 0.8)
