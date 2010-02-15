@@ -66,11 +66,11 @@ DEVELOPER_NAME = "happychickoo"
 # Analytics identifiers.
 GOOGLE_ANALYTICS_ID = 'UA-11769464-1'
 
-OWNER_NAME = 'Greatship (India) Limited.'
-OWNER_ADDRESS = '#101, Marathon Innova B2, Off. Ganpatrao Kadam Marg, West Lower Parel, Mumbai, MH 400013, India.'
+OWNER_NAME = 'Khandelwal Groupe'
+OWNER_ADDRESS = ''
 OWNER_URL = '/'
-OWNER_COMPANY = 'Greatship (India) Limited.'
-COPYRIGHT_YEARS = '2008, 2009'
+OWNER_COMPANY = 'Khandelwal Groupe'
+COPYRIGHT_YEARS = '2010'
 
 DEFAULT_MARKUP = 'html'
 
