@@ -119,6 +119,8 @@ h3
 //--- Splash ---//
 #splash
   :margin 20px 0px
+  :padding-top 40px 
+  :padding-bottom 40px
   :overflow auto
   :clear both
 #slogan
@@ -137,7 +139,11 @@ h3
     +border-radius(5px)
     a
       :display block
-  
+  li:hover
+    :position relative
+    :z-index 40
+    +transform("scale(1.6)")
+    +transition("-webkit-transform 0.45s ease")  
 
 //--- Footer ---//
 #footer
