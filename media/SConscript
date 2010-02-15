@@ -28,6 +28,7 @@ IMAGE_FILES = Split("""
     image/button/menu.png
     image/button/see_more.png
     image/heading/we_build_value.png
+    image/heading/we_shape_your_dreams.png
     image/logo/en_US/text.png
     image/photos/first_tax_free.jpg
     image/photos/gokuldham.jpg

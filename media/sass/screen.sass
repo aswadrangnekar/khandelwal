@@ -4,7 +4,7 @@
 @import base.sass
 
 body
-  :background= !color_background !image_body_background "repeat-x scroll 0 0"
+  :background= !color_background !image_footer_background "repeat-x scroll 0px 54px"
   :font= "1em/1.5" !font_family_serif
   :color= !color_light_body_text
 p, blockquote, pre, li, dl
@@ -46,34 +46,34 @@ h3
 //--- Navigation styles ---//
 #header
   +grid-container
-  :margin-top 50px
+  :margin-top 20px
   :overflow auto
 #logo
-  :background= "transparent" !image_logo "no-repeat scroll 0px -36px"
+  :background= "transparent" !image_logo "no-repeat scroll 0px 0px"
   :display block
   :width 316px
-  :height 36px
+  :height 64px
   :float left
 #navigation
   :float right
   li
     +display-inline-block
     :margin-right 10px
-    :width 110px
+    :width 90px
     a
-      :height 30px
+      :height 26px
       :color white
-      :background= "transparent" !image_menu_button "no-repeat scroll 0px -40px"
+      :background= "transparent" !image_menu_button "no-repeat scroll 0px -32px"
       :font-family= !font_stack_helvetica
       :text-decoration none
       :display block
       :text-align center
       :text-shadow 1px 2px 2px #333 
     a:hover
-      :background-position 0px -5px
+      :background-position 0px -4px
     a.active
-      :background-position 0px -70px
-      :height 40px
+      :background-position 0px -56px
+      :height 34px
 
 //--- Trunk ---//
 #trunk
@@ -133,7 +133,6 @@ h3
   
 //--- Splash ---//
 #splash
-  :margin 20px 0px
   :padding-top 40px 
   :padding-bottom 40px
   :overflow auto
@@ -144,8 +143,9 @@ h3
   :width 250px
   :margin-right 50px
   h2
-    :margin 20px 0px 10px 0px
+    :margin 5px 0px
     :color #efefef
+    :font-size 1.2em
 #photos
   li
     +display-inline-block
@@ -164,8 +164,8 @@ h3
 
 //--- Footer ---//
 #footer
-  :background= "transparent" !image_footer_background "repeat-x scroll 0 0"
-  :min-height 268px
+  //:background= "transparent" !image_footer_background "repeat-x scroll 0 0"
+  //:min-height 268px
 #footer-content
   +grid-container
   :font-size 0.8em
