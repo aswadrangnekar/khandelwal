@@ -47,6 +47,7 @@ h3
 #header
   +grid-container
   :margin-top 50px
+  :overflow auto
 #logo
   :background= "transparent" !image_logo "no-repeat scroll 0px -36px"
   :display block
@@ -81,6 +82,27 @@ h3
 #trunk-content
   +grid-container
 
+//--- Splash ---//
+#splash
+  :margin 20px 0px
+  :overflow auto
+  :clear both
+#slogan
+  :text-align right
+  :float left
+  :width 250px
+  :margin-right 50px
+  h2
+    :margin 20px 0px 10px 0px
+    :color #efefef
+#photos
+  li
+    +display-inline-block
+    :border 4px solid white
+    :margin-right 20px
+    a
+      :display block
+  
 
 //--- Footer ---//
 #footer
