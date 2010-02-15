@@ -82,14 +82,40 @@ h3
 #trunk-content
   +grid-container
   
-.article
+#top-transparent-area
   :background-color rgba(255, 255, 255, 0.4)
-  +border-radius(10px)
-.content
-  :background-color white
-  :margin 10px 0px
+  +border-radius-top-left(10px)
+  +border-radius-top-right(10px)
+  :border 1px solid #ededed
+  :height 30px
+#bottom-transparent-area
+  :background-color rgba(255, 255, 255, 0.4)
+  +border-radius-bottom-left(10px)
+  +border-radius-bottom-right(10px)
+  :border 1px solid #ededed
+  :height 30px
+.article
+  :color #555
+  :background-color #ededed
+  //+grid-system(12)
   :padding 10px
+  :clear both
+  :overflow auto
+  
+.content
+  +grid(8, 12)
+  :float left
+  :text-align right
 
+.sidebox
+  :text-align left
+  +grid(3, 12)
+  > p, > ul > li
+    :font= "0.9em/1.3" !font_family_sans_serif
+  > h2
+    :margin-top 1em
+    :font= "normal bold 1em/1.5" !font_family_sans_serif_medium
+  
 //--- Splash ---//
 #splash
   :margin 20px 0px
@@ -106,9 +132,9 @@ h3
 #photos
   li
     +display-inline-block
-    :border 4px solid white
+    :border 4px solid #ededed
     :margin-right 20px
-    +border-radius(10px)
+    +border-radius(5px)
     a
       :display block
   
