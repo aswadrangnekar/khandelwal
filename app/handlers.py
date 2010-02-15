@@ -43,6 +43,22 @@ class IndexHandler(BaseRequestHandler):
     def get(self):
         self.render('index.html')
 
+class ContactHandler(BaseRequestHandler):
+    def get(self):
+        self.render('contact.html')
+
+class InquiryHandler(BaseRequestHandler):
+    def get(self):
+        self.render('inquiry.html')
+
+class ProjectsHandler(BaseRequestHandler):
+    def get(self):
+        self.render('projects.html')
+
+class AboutHandler(BaseRequestHandler):
+    def get(self):
+        self.render('about.html')
+
 settings = {
     "debug": configuration.DEBUG,
     #"xsrf_cookies": True,
@@ -50,6 +66,10 @@ settings = {
 }
 urls = (
     (r'/', IndexHandler),
+    (r'/projects/?', ProjectsHandler),
+    (r'/about/?', AboutHandler),
+    (r'/contact/?', ContactHandler),
+    (r'/inquiry/?', InquiryHandler),
 )
 application = tornado.wsgi.WSGIApplication(urls, **settings)
 

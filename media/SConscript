@@ -91,6 +91,38 @@ SCRIPT_BUNDLES = (
             script/index.js
         """)
     ),
+    dict(
+        selector="about.js",
+        sources = Split(
+        COMMON_SCRIPTS + 
+        """
+            script/about.js
+        """)
+    ),
+    dict(
+        selector="contact.js",
+        sources = Split(
+        COMMON_SCRIPTS + 
+        """
+            script/contact.js
+        """)
+    ),
+    dict(
+        selector="projects.js",
+        sources = Split(
+        COMMON_SCRIPTS + 
+        """
+            script/projects.js
+        """)
+    ),
+    dict(
+        selector="inquiry.js",
+        sources = Split(
+        COMMON_SCRIPTS + 
+        """
+            script/inquiry.js
+        """)
+    ),
 )
 
 CSS_BUNDLES = (
