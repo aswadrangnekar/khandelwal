@@ -1,45 +1,46 @@
 {% extends "base.html" %}
 
+{% block body_attributes %} class="projects"{% end %}
+
 {% block nav_projects_class %}active{% end %}
 
 {% block tag_trunk_content %}
-<h1>Building since 1980.</h1>
+<div id="trunk-header">
+  <img src="{{ MEDIA_URL }}image/heading/building_since_1980.png" title="Building since 1980." width="350px" height="36px" />
+  <h2>More than 3 decades of building thousands of happy home owners.</h2>
+</div>
 <div id="top-transparent-area">
 </div>
 <div class="article">
   <div class="sidebox">
     <div id="projects-list">
-      <h2>Up Coming</h2>
+      <h2>Ongoing projects</h2>
       <ul>
-        <li>Savgan Heights</li>
-        <li>Krishna Kunj</li>
-        <li>Malhari Sadan</li>
-        <li>Orchid Park</li>
-        <li>Pushpa Kunj</li>
-        <li>Vimla Villa</li>
+        <li>&raquo; <a href="/savgan_heights">Savgan Heights</a></li>
+        <li>&raquo; Krishna Kunj</li>
+        <li>&raquo; Malhari Sadan</li>
+        <li>&raquo; Orchid Park</li>
+        <li>&raquo; Pushpa Kunj</li>
+        <li>&raquo; Vimla Villa</li>
       </ul>
-      <h2>Completed</h2>
+      <h2>Completed projects</h2>
       <ul>
-        <li>Sea Woods</li>
-        <li>Prakash Tower</li>
-        <li>Gokuldham</li>
-        <li>Anand Villa</li>
-        <li>Jeevan Sangam</li>
-        <li>First Tax</li>
-        <li>Shashi</li>
-        <li>Dadar Bazaar</li>
-        <li>Holar</li>
+        <li>&raquo; Sea Woods</li>
+        <li>&raquo; Prakash Tower</li>
+        <li>&raquo; Gokuldham</li>
+        <li>&raquo; Anand Villa</li>
+        <li>&raquo; Jeevan Sangam</li>
+        <li>&raquo; First Tax</li>
+        <li>&raquo; Shashi</li>
+        <li>&raquo; Dadar Bazaar</li>
+        <li>&raquo; Holar</li>
       </ul>
     </div>
   </div>
   <div class="content reversed">
-    <h1>What is Lorem Ipsum?</h1>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <h1>Why do we use it?</h1>
-    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-    <h1>Where does it come from?</h1>
-    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+    {% block tag_project_content %}
+    
+    {% end %}
   </div>
 </div>
 <div id="bottom-transparent-area">

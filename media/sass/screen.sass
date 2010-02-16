@@ -3,8 +3,10 @@
   
 @import base.sass
 
+body.home
+  :background= !color_background !image_body_background "repeat-x scroll 0px 54px"
 body
-  :background= !color_background !image_footer_background "repeat-x scroll 0px 54px"
+  :background= !color_background !image_body_small_background "repeat-x scroll 0px 20px"
   :font= "1em" !font_family_serif
   :color= !color_light_body_text
 p, blockquote, pre, li, dl
@@ -29,10 +31,13 @@ h1
     :color #e05f2c
     :font-weight bold
 h2
-  :margin-top 2em
+  //:margin-top 2em
   :font= "italic 21px/1.5" !font_stack_georgia
 h3
   :font= "bold 16px/1.5" !font_family_sans_serif_medium
+dt
+  :font-weight bold
+  :font-size 1.1em
 //a
 //  :color= !color_link
 //  :text-decoration none
@@ -65,6 +70,7 @@ h3
       :color white
       :background= "transparent" !image_menu_button "no-repeat scroll 0px -32px"
       :font-family= !font_stack_helvetica
+      :font-size 1.1em
       :text-decoration none
       :display block
       :text-align center
@@ -79,6 +85,17 @@ h3
 #trunk
   :clear both
   :min-height 500px
+
+#trunk-header
+  :margin 40px 0px
+  >img  
+    :margin-bottom 10px
+  >h2
+    :margin-top 0px
+    :color #ededed
+    :text-shadow 1px 3px 1px #000
+    :font-weight bold 
+  
 #trunk-content
   +grid-container
   
@@ -120,18 +137,31 @@ h3
     :margin-top 1em
     :font= "normal bold 1em/1.5" !font_family_sans_serif_medium
     
-    
+.projects
+  .sidebox
+    +grid(3, 16)
+  .content
+    +grid(12, 16)    
 #projects-list
   >h2
     :font-style normal
     :font-weight bold
     :cursor pointer
     :margin-top 1em
+    :color gray
+    :font-size 1em
+  >h2:hover
+    :border-bottom= "1px dashed" !color_heading_text
+    :color= !color_heading_text
   >h2.current
     :cursor default
-    :text-decoration underline
+    :border-bottom= "1px dashed" !color_heading_text
+    :color= !color_heading_text
   >ul
     :display none
+    :margin-top 10px
+    li
+      :text-indent 10px
   
 //--- Splash ---//
 #splash
