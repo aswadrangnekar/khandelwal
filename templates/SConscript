@@ -25,6 +25,7 @@ PAGE_TEMPLATE_FILES = Split("""
     contact.html
     inquiry.html
     about.html
+    project_information.html
 """)
 
 BASE_TEMPLATE_FILES = Split("""
