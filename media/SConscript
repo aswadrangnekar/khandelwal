@@ -24,11 +24,16 @@ SCRIPT_FILES = Split("""
 
 IMAGE_FILES = Split("""
     image/bg/sky.jpg
+    image/bg/urban_landscape_small.jpg
     image/bg/urban_landscape.jpg
     image/button/menu.png
     image/button/see_more.png
     image/heading/we_build_value.png
     image/heading/we_shape_your_dreams.png
+    image/heading/building_since_1980.png
+    image/heading/get_in_touch_with_us.png
+    image/heading/know_more_about_us.png
+    image/heading/need_something.png
     image/logo/en_US/text.png
     image/photos/first_tax_free.jpg
     image/photos/gokuldham.jpg
@@ -136,6 +141,14 @@ SCRIPT_BUNDLES = (
         COMMON_SCRIPTS + 
         """
             script/inquiry.js
+        """)
+    ),
+    dict(
+        selector="project_information.js",
+        sources = Split(
+        COMMON_SCRIPTS + 
+        """
+            script/project_information.js
         """)
     ),
 )
