@@ -16,24 +16,15 @@
     <div id="projects-list">
       <h2>Ongoing projects</h2>
       <ul>
-        <li>&raquo; <a href="/savgan_heights">Savgan Heights</a></li>
-        <li>&raquo; Krishna Kunj</li>
-        <li>&raquo; Malhari Sadan</li>
-        <li>&raquo; Orchid Park</li>
-        <li>&raquo; Pushpa Kunj</li>
-        <li>&raquo; Vimla Villa</li>
+        {% for p in ongoing_projects %}
+          <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>
+        {% end %}
       </ul>
       <h2>Completed projects</h2>
       <ul>
-        <li>&raquo; Sea Woods</li>
-        <li>&raquo; Prakash Tower</li>
-        <li>&raquo; Gokuldham</li>
-        <li>&raquo; Anand Villa</li>
-        <li>&raquo; Jeevan Sangam</li>
-        <li>&raquo; First Tax</li>
-        <li>&raquo; Shashi</li>
-        <li>&raquo; Dadar Bazaar</li>
-        <li>&raquo; Holar</li>
+        {% for p in completed_projects %}
+          <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>
+        {% end %}
       </ul>
     </div>
   </div>
