@@ -8,13 +8,13 @@
     <h2>Floor plans</h2>
     <ul>
       {% for floor_plan in project.floor_plans %}
-        <li><a href="{{ floor_plan.picture_url }}"><img src="{{ floor_plan.thumb_url }}" />{{ floor_plan.caption }}</a></li>
+        <li><a href="{{ floor_plan.picture_url }}"><img src="{{ floor_plan.thumb_url }}" /><span>{{ floor_plan.caption }}</span></a></li>
       {% end %}
     </ul>
     <h2>Pictures and location map</h2>
     <ul>
       {% for photo in project.photos %}
-        <li><a href="{{ photo.picture_url }}"><img src="{{ photo.thumb_url }}" />{{ photo.caption }}</a></li>
+        <li><a href="{{ photo.picture_url }}"><img src="{{ photo.thumb_url }}" /><span>{{ photo.caption }}</span></a></li>
       {% end %}
     </ul>
   </div>
