@@ -49,6 +49,17 @@ IMAGE_FILES = Split("""
     image/photos/thumb/sea_woods.jpg
     image/photos/thumb/shashi.jpg
     image/photos/thumb/holar.jpg
+    
+    image/photos/savgan_floor_plan_1.jpg
+    image/photos/savgan_floor_plan_2.jpg
+    image/photos/savgan_floor_plan_3.jpg
+    image/photos/savgan_floor_plan_4.jpg
+    image/photos/savgan_location_map.jpg
+    image/photos/thumb/savgan_floor_plan_1.jpg
+    image/photos/thumb/savgan_floor_plan_2.jpg
+    image/photos/thumb/savgan_floor_plan_3.jpg
+    image/photos/thumb/savgan_floor_plan_4.jpg
+    image/photos/thumb/savgan_location_map.jpg
 
     image/lightbox/lightbox-blank.gif
     image/lightbox/lightbox-btn-close.gif

@@ -90,6 +90,10 @@ class InquiryHandler(BaseRequestHandler):
 class ProjectsHandler(BaseRequestHandler):
     def get(self):
         self.render('projects.html')
+        
+class SavganHeightsHandler(BaseRequestHandler):
+    def get(self):
+        self.render('savgan_heights.html')
 
 class ProjectInformationHandler(BaseRequestHandler):
     def get(self, name):
@@ -110,6 +114,7 @@ urls = (
     (r'/contact/?', ContactHandler),
     (r'/inquiry/?', InquiryHandler),
     (r'/projects/?', ProjectsHandler),
+    (r'/project/savgan_heights/?', SavganHeightsHandler),
     (r'/project/(.*)/?', ProjectInformationHandler),
 )
 application = tornado.wsgi.WSGIApplication(urls, **settings)

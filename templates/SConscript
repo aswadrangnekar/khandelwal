@@ -30,6 +30,7 @@ PAGE_TEMPLATE_FILES = Split("""
 
 BASE_TEMPLATE_FILES = Split("""
     base.html
+    savgan_heights.html
 """)
 
 TEMPLATE_FILES = BASE_TEMPLATE_FILES + Split("""
