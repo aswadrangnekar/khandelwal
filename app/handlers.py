@@ -121,7 +121,6 @@ urls = (
     (r'/contact/?', ContactHandler),
     (r'/inquiry/?', InquiryHandler),
     (r'/projects/?', ProjectsHandler),
-    (r'/project/savgan_heights/?', SavganHeightsHandler),
     (r'/project/(.*)/?', ProjectInformationHandler),
 )
 application = tornado.wsgi.WSGIApplication(urls, **settings)

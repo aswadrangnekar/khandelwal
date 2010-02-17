@@ -12,7 +12,7 @@ import appengine_admin
 import markup
 
 def slugify(s):
-    return u_slugify(s.lower())
+    return u_slugify(s).lower()
 
 render_markup = markup.render_markdown
 
@@ -32,6 +32,7 @@ class Inquiry(SerializableModel):
 
 class Project(SerializableModel):
     title = db.StringProperty()
+    slogan = db.StringProperty()
     location = db.StringProperty()
     subtitle = db.StringProperty()
     description = db.TextProperty()
@@ -109,7 +110,7 @@ class AdminInquiry(appengine_admin.ModelAdmin):
 class AdminProject(appengine_admin.ModelAdmin):
     model = Project
     listFields = ('title', 'subtitle', 'slug', 'location', 'development_status',)
-    editFields = ('title', 'subtitle', 'location', 'development_status', 'cover_thumb_url', 'cover_picture_url', 'description')
+    editFields = ('title', 'subtitle', 'slogan', 'location', 'development_status', 'cover_thumb_url', 'cover_picture_url', 'description')
     readonlyFields = ('slug', 'description_html', 'when_modified', 'when_created')
     listGql = 'order by title asc'
     
