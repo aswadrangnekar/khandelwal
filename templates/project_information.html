@@ -1,6 +1,33 @@
 {% extends "projects.html" %}
 
 {% block tag_trunk_content %}
+<div id="top-transparent-area">
+</div>
+<div class="article">
+  <div class="sidebox">
+    <h2>Floor plans</h2>
+    <ul>
+      {% for floor_plan in project.floor_plans %}
+        <li><a href="{{ floor_plan.picture_url }}"><img src="{{ floor_plan.thumb_url }}" />{{ floor_plan.caption }}</a></li>
+      {% end %}
+    </ul>
+    <h2>Pictures and location map</h2>
+    <ul>
+      {% for photo in project.photos %}
+        <li><a href="{{ photo.picture_url }}"><img src="{{ photo.thumb_url }}" />{{ photo.caption }}</a></li>
+      {% end %}
+    </ul>
+  </div>
+  <div class="content reversed">
+    {% block tag_project_content %}
+      <h1>{{ project.title }} <strong>{{ project.subtitle }}</strong></h1>
+      <p>{{ project.location }}</p>
+      {{ project.description_html }}
+    {% end %}
+  </div>
+</div>
+<div id="bottom-transparent-area">
+</div>
 {% end %}
 
 {% block tag_scripts %}{% end %}
