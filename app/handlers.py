@@ -99,12 +99,17 @@ class ProjectsHandler(BaseRequestHandler):
 class ProjectInformationHandler(BaseRequestHandler):
     def get(self, id_or_slug):
         from models import Project
+        completed_projects = Project.get_all_complete()
+        ongoing_projects = Project.get_all_ongoing()
         try:
             id = int(id_or_slug, 10)
             project = Project.get_by_id(id)
         except ValueError:
             project = Project.get_by_slug(id_or_slug)
-        self.render('project_information.html', project=project)
+        self.render('project_information.html', 
+            project=project,
+            completed_projects=completed_projects,
+            ongoing_projects=ongoing_projects)
 
 class AboutHandler(BaseRequestHandler):
     def get(self):
