@@ -89,15 +89,22 @@ class InquiryHandler(BaseRequestHandler):
 
 class ProjectsHandler(BaseRequestHandler):
     def get(self):
-        self.render('projects.html')
-        
-class SavganHeightsHandler(BaseRequestHandler):
-    def get(self):
-        self.render('savgan_heights.html')
+        from models import Project
+        completed_projects = Project.get_all_complete()
+        ongoing_projects = Project.get_all_ongoing()
+        self.render('projects.html', 
+            completed_projects=completed_projects,
+            ongoing_projects=ongoing_projects)
 
 class ProjectInformationHandler(BaseRequestHandler):
-    def get(self, name):
-        self.render('project_information.html')
+    def get(self, id_or_slug):
+        from models import Project
+        try:
+            id = int(id_or_slug, 10)
+            project = Project.get_by_id(id)
+        except ValueError:
+            project = Project.get_by_slug(id_or_slug)
+        self.render('project_information.html', project=project)
 
 class AboutHandler(BaseRequestHandler):
     def get(self):

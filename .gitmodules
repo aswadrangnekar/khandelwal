@@ -4,3 +4,6 @@
 [submodule "media/script/lib/chickoojs"]
 	path = media/script/lib/chickoojs
 	url = git://github.com/yesudeep/chickoojs.git
+[submodule "app/lib/aetycoon"]
+	path = app/lib/aetycoon
+	url = git://github.com/Arachnid/aetycoon.git
