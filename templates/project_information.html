@@ -1,6 +1,31 @@
 {% extends "projects.html" %}
 
-{% block tag_project_content %}
+{% block tag_trunk_content %}
+<div id="trunk-header">
+  <img src="{{ MEDIA_URL }}image/heading/building_since_1980.png" title="Building since 1980." width="350px" height="36px" />
+  <h2>More than 3 decades of building thousands of happy home owners.</h2>
+</div>
+<div id="top-transparent-area">
+</div>
+<div class="article">
+  <div class="sidebox">
+    <div id="projects-list">
+      <h2 id="ongoing-projects">Ongoing</h2>
+      <ul>
+        {% for p in ongoing_projects %}
+          <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>
+        {% end %}
+      </ul>
+      <h2 id="completed-projects">Completed</h2>
+      <ul>
+        {% for p in completed_projects %}
+          <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>
+        {% end %}
+      </ul>
+    </div>
+  </div>
+  <div class="content reversed">
+    {% block tag_project_content %}
   <h1>{{ project.title }}</h1>
   <strong>{{ project.subtitle }}</strong>
   <p>{{ project.location }}</p>
@@ -18,6 +43,13 @@
   </ul>
   {{ project.description_html }}
 {% end %}
+  </div>
+</div>
+<div id="bottom-transparent-area">
+</div>
+{% end %}
+
+
 
 {% block tag_scripts %}
 <script type="text/javascript">$SELECTOR_SCRIPT</script>
