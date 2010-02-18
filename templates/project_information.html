@@ -1,5 +1,22 @@
 {% extends "projects.html" %}
 
+{% block tag_sidebox_content %}
+  <div id="projects-list">
+    <h2 id="ongoing-projects">Ongoing</h2>
+    <ul>
+      {% for p in ongoing_projects %}
+        <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>
+      {% end %}
+    </ul>
+    <h2 id="completed-projects">Completed</h2>
+    <ul>
+      {% for p in completed_projects %}
+        <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>
+      {% end %}
+    </ul>
+  </div>
+{% end %}
+
 {% block tag_project_content %}
   <h1>{{ project.title }}</h1>
   <strong>{{ project.subtitle }}</strong>

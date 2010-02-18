@@ -12,5 +12,4 @@ jQuery(function(){
     tabs: 'h2',
     effect: 'slide'
   });*/
-  
 });
