@@ -31,7 +31,18 @@
   </div>
   <div class="content reversed">
     {% block tag_project_content %}
-    
+      <h2>Ongoing projects</h2>
+      <ul class="photos">
+      {% for p in ongoing_projects %}
+        <li><a href="/project/{{ p.slug }}"><img src="{{ p.cover_thumb_url }}" /><span>{{ p.title }}</span></a></li>
+      {% end %}
+      </ul>
+      <h2>Completed projects</h2>
+      <ul class="photos">
+      {% for p in completed_projects %}
+        <li><a href="/project/{{ p.slug }}"><img src="{{ p.cover_thumb_url }}" /><span>{{ p.title }}</span></a></li>
+      {% end %}
+      </ul>
     {% end %}
   </div>
 </div>
@@ -39,6 +50,3 @@
 </div>
 {% end %}
 
-{% block tag_scripts %}
-<script type="text/javascript">$SELECTOR_SCRIPT</script>
-{% end %}
