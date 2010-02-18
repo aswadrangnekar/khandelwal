@@ -43,6 +43,9 @@ IMAGE_FILES = Split("""
     image/photos/sea_woods.jpg
     image/photos/shashi.jpg
     image/photos/holar.jpg
+    image/photos/anand_villa.jpg
+    image/photos/thumb/anand_villa.jpg
+    image/photos/thumb/savgan_heights.jpg
     image/photos/thumb/first_tax_free.jpg
     image/photos/thumb/gokuldham.jpg
     image/photos/thumb/prakash_tower.jpg
