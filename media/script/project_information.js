@@ -8,6 +8,10 @@ jQuery(function(){
 		imageBlank: '/s/image/lightbox/lightbox-blank.gif'
   };
   jQuery('.photos a').lightBox(lightboxOptions);
+  jQuery('img.advancedpanorama').panorama({
+    auto_start: 0,
+    start_position: 0
+  });
   /*jQuery('#projects-list').tabs("#projects-list ul", {
     tabs: 'h2',
     effect: 'slide'
