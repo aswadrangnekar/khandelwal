@@ -46,21 +46,15 @@
       </ul>
     </li>
     <li id="project-details">
+      <div class="description">
       {{ project.description_html }}
+      </div>
     </li>
     <li id="virtual-tour">
       <h2>Virtual tour</h2>
       <p><img src="http://www.openstudio.fr/jquery-virtual-tour/img/atelier.jpg" class="advancedpanorama" width="2448" height="375" alt="Atelier du sculpteur" /></p>
-      <h2>Pictures and location map</h2>
-      <ul class="photos">
-        {% for photo in project.photos %}
-          <li><a href="{{ photo.picture_url }}" title="{{ photo.caption }}"><img src="{{ photo.thumb_url }}" /><span>{{ photo.caption }}</span></a></li>
-        {% end %}
     </li>
   </ul>
-  <div class="description">
-  {{ project.description_html }}
-  </div>
 {% end %}
 
 
