@@ -13,7 +13,11 @@
 <div id="top-transparent-area">
 </div>
 <div class="article">
-  
+  <div class="sidebox">
+    {% block tag_sidebox_content %}
+      
+    {% end %}
+  </div>
   <div class="content reversed">
     {% block tag_project_content %}
       <h2>Ongoing projects</h2>
