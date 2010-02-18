@@ -7,6 +7,11 @@ jQuery(function(){
 		imageBtnClose: '/s/image/lightbox/lightbox-btn-close.gif',
 		imageBlank: '/s/image/lightbox/lightbox-blank.gif'
   };
+  jQuery("ul.tabs").tabs("ul.panes >li", {
+    effect: 'fade', 
+    //fadeOutSpeed: 400
+  });
+  
   jQuery('.photos a').lightBox(lightboxOptions);
   jQuery('img.advancedpanorama').panorama({
     auto_start: 0,

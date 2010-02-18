@@ -51,6 +51,37 @@ address
 //a:visited
 //  :color= !color_link_visited 
 
+
+//--- Tabs ---//
+.tabs
+  li
+    +display-inline-block
+    a
+      :background-color= !color_awesome_gray_dark
+      +border-radius-top-left(10px)
+      +border-radius-top-right(10px)
+      :color white
+      :text-decoration none
+      :text-align center
+      :padding 5px 10px
+      :margin-right 2px
+      :border-top 1px solid black
+      :border-left 1px solid black
+      :border-right 1px solid black
+    a:hover
+      :background-color= !color_awesome_gray
+      :color= !color_awesome_black 
+      :border-top 1px solid gray
+      :border-left 1px solid gray
+      :border-right 1px solid gray
+    a.current
+      :background-color= !color_awesome_black_dark
+      :color= !color_awesome_silver
+
+ul.panes  
+  >li
+    :display none
+    
   
 //--- Navigation styles ---//
 #header
