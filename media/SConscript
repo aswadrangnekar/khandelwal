@@ -158,7 +158,11 @@ SCRIPT_BUNDLES = (
         """
             script/lib/chickoojs/src/jquery/tools/1.1.2/jquery.tools.min.js
             script/lib/jquery.lightbox-0.5.js
+            script/lib/chickoojs/src/jquery/virtual-tour/js/jquery.panorama.js
             script/project_information.js
+            script/lib/chickoojs/src/jquery/virtual-tour/js/cvi_text_lib.js
+            script/lib/chickoojs/src/jquery/virtual-tour/js/jquery.advanced-panorama.js
+            script/lib/chickoojs/src/jquery/virtual-tour/js/jquery.flipv.js
         """)
     ),
 )
@@ -177,6 +181,7 @@ CSS_BUNDLES = (
     dict(
         target="css/screen-all.css",
         sources = Split("""
+            script/lib/chickoojs/src/jquery/virtual-tour/css/jquery.panorama.css
             script/lib/chickoojs/src/jquery/lightbox/0.5/css/jquery.lightbox-0.5.css
             css/screen.css
         """)
