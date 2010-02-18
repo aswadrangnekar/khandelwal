@@ -137,15 +137,7 @@ SCRIPT_BUNDLES = (
             script/contact.js
         """)
     ),
-    dict(
-        selector="projects.js",
-        sources = Split(
-        COMMON_SCRIPTS + 
-        """
-            script/lib/chickoojs/src/jquery/tools/1.1.2/jquery.tools.min.js
-            script/projects.js
-        """)
-    ),
+
     dict(
         selector="inquiry.js",
         sources = Split(
@@ -164,6 +156,16 @@ SCRIPT_BUNDLES = (
         """)
     ),
 )
+
+'''    dict(
+        selector="projects.js",
+        sources = Split(
+        COMMON_SCRIPTS + 
+        """
+            script/lib/chickoojs/src/jquery/tools/1.1.2/jquery.tools.min.js
+            script/projects.js
+        """)
+    ),'''
 
 CSS_BUNDLES = (
     dict(

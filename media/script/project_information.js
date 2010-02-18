@@ -8,4 +8,9 @@ jQuery(function(){
 		imageBlank: '/s/image/lightbox/lightbox-blank.gif'
   };
   jQuery('.photos a').lightBox(lightboxOptions);
+  /*jQuery('#projects-list').tabs("#projects-list ul", {
+    tabs: 'h2',
+    effect: 'slide'
+  });*/
+  
 });
