@@ -19,22 +19,38 @@
 {% end %}
 
 {% block tag_project_content %}
-    <h1>{{ project.title }}</h1>
+  <h1>{{ project.title }}</h1>
   <strong>{{ project.subtitle }}</strong>
   <p>{{ project.location }}</p>
-  <h2>Pictures and location map</h2>
-  <ul class="photos">
-    {% for photo in project.photos %}
-      <li><a href="{{ photo.picture_url }}" title="{{ photo.caption }}"><img src="{{ photo.thumb_url }}" /><span>{{ photo.caption }}</span></a></li>
-    {% end %}
+  <ul class="tabs">
+    <li><a href="#pictures-and-maps" class="tab-button">Pictures & Map</a></li>
+    <li><a href="#floor-plan" class="tab-button">Floor plan</a></li>
+    <li><a href="#project-details" class="tab-button">Project details</a></li>
+    <li><a href="#virtual-tour" class="tab-button">Virtual Tour</a></li>    
   </ul>
-  <h2>Floor plans</h2>
-  <ul class="photos">
-    {% for floor_plan in project.floor_plans %}
-      <li><a href="{{ floor_plan.picture_url }}" title="{{ floor_plan.caption }}"><img src="{{ floor_plan.thumb_url }}"  /><span>{{ floor_plan.caption }}</span></a></li>
-    {% end %}
+  <ul class="panes">
+    <li id="pictures-and-maps">
+      <h2>Pictures and location map</h2>
+      <ul class="photos">
+        {% for photo in project.photos %}
+          <li><a href="{{ photo.picture_url }}" title="{{ photo.caption }}"><img src="{{ photo.thumb_url }}" /><span>{{ photo.caption }}</span></a></li>
+        {% end %}
+      </ul>
+    </li>
+    <li id="floor-plan">
+      <h2>Floor plans</h2>
+      <ul class="photos">
+        {% for floor_plan in project.floor_plans %}
+          <li><a href="{{ floor_plan.picture_url }}" title="{{ floor_plan.caption }}"><img src="{{ floor_plan.thumb_url }}"  /><span>{{ floor_plan.caption }}</span></a></li>
+        {% end %}
+      </ul>
+    </li>
+    <li id="project-details">
+      {{ project.description_html }}
+    </li>
+    <li id="virtual-tour">
+    </li>
   </ul>
-  {{ project.description_html }}
 {% end %}
 
 
