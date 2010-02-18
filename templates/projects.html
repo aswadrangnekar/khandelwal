@@ -15,13 +15,13 @@
 <div class="article">
   <div class="sidebox">
     <div id="projects-list">
-      <h2>Ongoing projects</h2>
+      <h2 id="ongoing-projects">Ongoing</h2>
       <ul>
         {% for p in ongoing_projects %}
           <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>
         {% end %}
       </ul>
-      <h2>Completed projects</h2>
+      <h2 id="completed-projects">Completed</h2>
       <ul>
         {% for p in completed_projects %}
           <li>&raquo; <a href="/project/{{ p.slug }}">{{ p.title }}</a></li>

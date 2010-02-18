@@ -144,20 +144,27 @@ dt
   .content
     +grid(12, 16)    
 #projects-list
-  >h2
+  h2
     :font-style normal
     :font-weight bold
     :cursor pointer
     :margin-top 1em
-    :color gray
+    :color white
+    :height 20px
+    :padding 17px 54px
+    //:text align center
     :font-size 1em
-  >h2:hover
-    :border-bottom= "1px dashed" !color_heading_text
-    :color= !color_heading_text
-  >h2.current
+    :background= "transparent" !image_project_list_button "no-repeat scroll 0 0"
+  #ongoing-projects 
+    :background-position 0px -133px
+  #ongoing-projects:hover, #ongoing-projects.current
+    :background-position 0px -193px
+    :padding 27px 54px
+  #completed-projects:hover, #completed-projects.current
+    :background-position 0px -65px
+    :padding 22px 54px
+  h2.current
     :cursor default
-    :border-bottom= "1px dashed" !color_heading_text
-    :color= !color_heading_text
   >ul
     :display none
     :margin-top 10px
