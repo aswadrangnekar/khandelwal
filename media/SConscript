@@ -26,6 +26,8 @@ IMAGE_FILES = Split("""
     image/bg/sky.jpg
     image/bg/urban_landscape_small.jpg
     image/bg/urban_landscape.jpg
+    image/bg/bottom_transparent_area.png
+    image/bg/top_transparent_area.png
     image/button/menu.png
     image/button/see_more.png
     image/button/project_list_button.png

@@ -100,6 +100,7 @@ ul.panes
     +display-inline-block
     :margin-right 10px
     :width 90px
+    :vertical-align top
     a
       :height 26px
       :color white
@@ -136,17 +137,13 @@ ul.panes
   +grid-container
   
 #top-transparent-area
-  :background-color rgba(255, 255, 255, 0.4)
-  +border-radius-top-left(10px)
-  +border-radius-top-right(10px)
-  :border 1px solid #ededed
-  :height 30px
+  :background= "transparent" !image_top_transparent_area "no-repeat scroll 0 0"
+  :height 46px
+  :width 960px
 #bottom-transparent-area
-  :background-color rgba(255, 255, 255, 0.4)
-  +border-radius-bottom-left(10px)
-  +border-radius-bottom-right(10px)
-  :border 1px solid #ededed
-  :height 30px
+  :background= "transparent" !image_bottom_transparent_area "no-repeat scroll 0 0"
+  :height 46px
+  :width 960px
 .article
   :color #555
   :background-color #ededed
