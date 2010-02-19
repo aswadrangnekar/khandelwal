@@ -46,6 +46,7 @@ IMAGE_FILES = Split("""
     image/photos/shashi.jpg
     image/photos/holar.jpg
     image/photos/anand_villa.jpg
+    image/photos/savgan_heights.jpg
     image/photos/thumb/anand_villa.jpg
     image/photos/thumb/savgan_heights.jpg
     image/photos/thumb/first_tax_free.jpg

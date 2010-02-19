@@ -12,7 +12,7 @@ jQuery(function(){
     //fadeOutSpeed: 400
   });
   
-  jQuery('.photos a').lightBox(lightboxOptions);
+  jQuery('.photos a, #project-photo').lightBox(lightboxOptions);
   jQuery('img.advancedpanorama').panorama({
     auto_start: 0,
     start_position: 0

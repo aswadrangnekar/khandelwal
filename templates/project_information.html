@@ -1,6 +1,6 @@
 {% extends "projects.html" %}
 
-
+{% block body_attributes %} class="project_information"{% end %}
 {% block tag_sidebox_content %}
   <div id="projects-list">
     <h2 id="ongoing-projects">Ongoing</h2>
@@ -19,14 +19,15 @@
 {% end %}
 
 {% block tag_project_content %}
+  <a href="{{ MEDIA_URL }}image/photos/savgan_heights.jpg" title="Savgan Heights" id="project-photo"><img src="{{ MEDIA_URL }}image/photos/thumb/savgan_heights.jpg" /></a>
   <h1>{{ project.title }}</h1>
   <strong>{{ project.subtitle }}</strong>
   <p>{{ project.location }}</p>
   <ul class="tabs">
-    <li><a href="#pictures-and-maps" class="tab-button">Pictures & Map</a></li>
-    <li><a href="#floor-plan" class="tab-button">Floor plan</a></li>
-    <li><a href="#project-details" class="tab-button">Project details</a></li>
-    <li><a href="#virtual-tour" class="tab-button">Virtual Tour</a></li>
+    <li><a href="#pictures-and-maps" >Pictures & Map</a></li>
+    <li><a href="#floor-plan" >Floor plan</a></li>
+    <li><a href="#project-details" >Project details</a></li>
+    <li><a href="#virtual-tour" >Virtual Tour</a></li>
   </ul>
   <ul class="panes">
     <li id="pictures-and-maps">
