@@ -8,7 +8,7 @@ jQuery(function(){
 		imageBlank: '/s/image/lightbox/lightbox-blank.gif'
   };
   jQuery('img.advancedpanorama').panorama({
-    auto_start: 1,
+    auto_start: 0,
     start_position: 1527
   });
   jQuery("ul.tabs").tabs("ul.panes >li", {
