@@ -14,7 +14,7 @@ DEST_DIR = '../' + env['MEDIA_DEST_DIR'] + '/'
 
 LOADER_SCRIPT = SRC_DIR + "script/lib/chickoojs/src/loader.js"
 DEFAULT_MEDIA_URL = "{{ TEXT_MEDIA_URL }}"
-JS_MINIFIED = "-min"
+JS_MINIFIED = ""
 
 SCRIPT_FILES = Split("""
     script/lib/chickoojs/src/jquery/jquery-1.3.2.js
@@ -161,7 +161,7 @@ SCRIPT_BUNDLES = (
         """
             script/lib/chickoojs/src/jquery/tools/1.1.2/jquery.tools.min.js
             script/lib/jquery.lightbox-0.5.js
-            script/lib/chickoojs/src/jquery/virtual-tour/js/jquery.panorama.js
+            script/lib/jquery.panorama.js
             script/project_information.js
             script/lib/chickoojs/src/jquery/virtual-tour/js/cvi_text_lib.js
             script/lib/chickoojs/src/jquery/virtual-tour/js/jquery.advanced-panorama.js

@@ -7,18 +7,12 @@ jQuery(function(){
 		imageBtnClose: '/s/image/lightbox/lightbox-btn-close.gif',
 		imageBlank: '/s/image/lightbox/lightbox-blank.gif'
   };
-  jQuery("ul.tabs").tabs("ul.panes >li", {
-    effect: 'fade', 
-    //fadeOutSpeed: 400
-  });
-  
-  jQuery('.photos a, #project-photo').lightBox(lightboxOptions);
   jQuery('img.advancedpanorama').panorama({
-    auto_start: 0,
-    start_position: 0
+    auto_start: 1,
+    start_position: 1527
   });
-  /*jQuery('#projects-list').tabs("#projects-list ul", {
-    tabs: 'h2',
-    effect: 'slide'
-  });*/
+  jQuery("ul.tabs").tabs("ul.panes >li", {
+    effect: 'fade'
+  });
+  jQuery('.photos a, #project-photo').lightBox(lightboxOptions);
 });
