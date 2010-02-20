@@ -167,6 +167,7 @@ SCRIPT_BUNDLES = (
             script/lib/chickoojs/src/jquery/virtual-tour/js/jquery.advanced-panorama.js
             script/lib/chickoojs/src/jquery/virtual-tour/js/jquery.flipv.js
         """)
+        # the order of the panorama+our script is important for IE
     ),
 )
 
