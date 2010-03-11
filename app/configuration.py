@@ -95,8 +95,8 @@ else:
 
 if DEBUG:
     # Minification suffixes to use for CSS and JS files.
-    CSS_MINIFIED = '-min'
-    JS_MINIFIED = '-min'
+    CSS_MINIFIED = ''
+    JS_MINIFIED = ''
 else:
     CSS_MINIFIED = '-min'
     JS_MINIFIED = '-min'
