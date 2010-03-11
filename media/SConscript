@@ -23,15 +23,13 @@ SCRIPT_FILES = Split("""
 """)
 
 IMAGE_FILES = Split("""
-    image/bg/sky.jpg
-    image/bg/urban_landscape_small.jpg
-    image/bg/urban_landscape.jpg
+    image/bg/sky.jpg    
     image/bg/bottom_transparent_area.png
     image/bg/top_transparent_area.png
     image/button/menu.png
+    image/button/nav.png
     image/button/see_more.png
     image/button/project_list_button.png
-    image/heading/we_build_value.png
     image/heading/we_shape_your_dreams.png
     image/heading/building_since_1980.png
     image/heading/get_in_touch_with_us.png
