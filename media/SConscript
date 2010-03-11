@@ -26,6 +26,10 @@ IMAGE_FILES = Split("""
     image/bg/sky.jpg    
     image/bg/bottom_transparent_area.png
     image/bg/top_transparent_area.png
+    image/bg/radial_gradient.png
+    image/bg/box.jpg
+    image/bg/buildings.png
+    image/bg/butterfly.gif
     image/button/menu.png
     image/button/nav.png
     image/button/see_more.png
@@ -54,6 +58,10 @@ IMAGE_FILES = Split("""
     image/photos/thumb/sea_woods.jpg
     image/photos/thumb/shashi.jpg
     image/photos/thumb/holar.jpg
+    image/photos/photo1.png
+    image/photos/photo2.png
+    image/photos/photo3.png
+    image/photos/photo4.png
     
     image/photos/savgan_floor_plan_1.jpg
     image/photos/savgan_floor_plan_2.jpg

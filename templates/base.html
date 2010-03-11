@@ -18,20 +18,21 @@
 		{% block tag_wrapper_content %}
 		{% block tag_header %}
 		<div id="header">
+		  <img src="{{ MEDIA_URL }}image/bg/butterfly.gif" id="butterfly"/>  
 		  <a href="/" id="logo"></a>
 		  {% block tag_page_heading %}
-		  {% end %}		  
+		  {% end %}		
     </div>
 		{% end %}
 		{% block tag_trunk %}
 		<div id="trunk">
 		  <div id="navigation">
 		    <ul id="navigation">
-		      <li><a href="/" class="{% block nav_home_class %}{% end %}">Home</a></li>
-		      <li><a href="/projects" class="{% block nav_projects_class %}{% end %}">Projects</a></li>
-		      <li><a href="/about" class="{% block nav_about_class %}{% end %}">About us</a></li>
-		      <li><a href="/contact" class="{% block nav_contact_class %}{% end %}">Contact</a></li>
-		      <li><a href="/inquiry" class="{% block nav_inquiry_class %}{% end %}">Inquiry</a></li>		    
+		      <li><a href="/" class="{% block nav_home_class %}{% end %}" id="home"></a></li>
+		      <li><a href="/projects" class="{% block nav_projects_class %}{% end %}" id="projects"></a></li>
+		      <li><a href="/about" class="{% block nav_about_class %}{% end %}" id="about"></a></li>
+		      <li><a href="/contact" class="{% block nav_contact_class %}{% end %}" id="contact"></a></li>
+		      <li><a href="/inquiry" class="{% block nav_inquiry_class %}{% end %}" id="inquiry"></a></li>		    
 		    </ul>
 		  </div>
 			<div id="trunk-content">
@@ -44,7 +45,9 @@
 		<div id="footer">
 			<div id="footer-content">
 			{% block tag_footer_content %}
-			  <p>Copyright &copy; 2010 <a href="/">Khandelwal Group&eacute;</a>. All rights reserved. Developed by <a href="http://www.aticest.com">Aticest</a> and designed by <a href="http://www.happychickoo.com">happychickoo</a>.</p>
+			  <div id="buildings">
+			  </div>
+			  <p>Copyright &copy; 2010 <a href="/">Khandelwal Group&eacute;</a>. All rights reserved. Designed and developed by <a href="http://www.happychickoo.com">Happychickoo</a> and <a href="http://www.aticest.com">Aticest</a>.</p>
 			{% end %}
       </div>
 		</div>
