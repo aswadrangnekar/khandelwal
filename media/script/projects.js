@@ -3,4 +3,8 @@ jQuery(function(){
     tabs: 'h2',
     effect: 'slide'				
   });*/
+  
+  jQuery("ul.tabs").tabs("ul.panes >li", {
+    effect: 'fade'
+  });
 })

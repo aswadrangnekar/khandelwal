@@ -182,9 +182,7 @@ SCRIPT_BUNDLES = (
         """)
         # the order of the panorama+our script is important for IE
     ),
-)
-
-'''    dict(
+    dict(
         selector="projects.js",
         sources = Split(
         COMMON_SCRIPTS + 
@@ -192,7 +190,9 @@ SCRIPT_BUNDLES = (
             script/lib/chickoojs/src/jquery/tools/1.1.2/jquery.tools.min.js
             script/projects.js
         """)
-    ),'''
+    ),
+)
+
 
 CSS_BUNDLES = (
     dict(

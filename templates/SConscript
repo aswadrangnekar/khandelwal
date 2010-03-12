@@ -25,11 +25,11 @@ PAGE_TEMPLATE_FILES = Split("""
     inquiry.html
     about.html
     project_information.html
+    projects.html
 """)
 
 BASE_TEMPLATE_FILES = Split("""
     base.html
-    projects.html
 """)
 
 TEMPLATE_FILES = BASE_TEMPLATE_FILES + Split("""
