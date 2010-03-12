@@ -95,6 +95,7 @@ IMAGE_FILES = Split("""
 
 CSS_FILES = Split("""
     css/screen.css
+    css/ie6.css
 """)
 
 # Do not include IMAGE files in here.
