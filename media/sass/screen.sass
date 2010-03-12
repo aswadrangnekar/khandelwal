@@ -4,13 +4,13 @@
 @import base.sass
 
 body
-  :background= !color_background !image_body_background "repeat-x scroll 0px 0px"
+  :background= !color_background !image_body_background "repeat scroll 0px 0px"
   :font= "1em" !font_family_serif
   :color= !color_light_body_text
 p, blockquote, pre, li, dl
   :line-height 1.5
   :margin-bottom 1em
-  :font-size 0.9em
+  :font-size 0.8em
 p.intro
   //:text-indent 2.5em
   :font= "0.9em" !font_stack_georgia
@@ -22,7 +22,7 @@ h1, h2, h3
   :color= !color_heading_text
 h1
   :text-shadow 1px 1px 1px #fff
-  :font-size 2.5em
+  :font-size 1.2em
   :font-weight normal
   >span
     :font-style italic
@@ -53,30 +53,22 @@ address
 //--- Tabs ---//
 .tabs
   :clear both
+  :margin-top 10px
   li
     +display-inline-block
     //:margin-bottom 0px
     a
       :background-color= !color_awesome_gray_dark
-      +border-radius-top-left(10px)
-      +border-radius-top-right(10px)
       :color white
       :text-decoration none
       :text-align center
       :padding 5px 10px
-      :margin-right 2px
-      :border-top 1px solid black
-      :border-left 1px solid black
-      :border-right 1px solid black
+      :text-transform uppercase
+      :font-size 1.2em
     a:hover
-      :background-color= !color_awesome_gray
-      :color= !color_awesome_black 
-      :border-top 1px solid gray
-      :border-left 1px solid gray
-      :border-right 1px solid gray
+      :background-color #74bbbd
     a.current
-      :background-color= !color_awesome_black_dark
-      :color= !color_awesome_silver
+      :background-color #74bbbd
 
 ul.panes
   //:border 2px solid #111
@@ -95,10 +87,13 @@ ul.panes
   +grid-container
   :margin-top 20px
   :overflow auto
+#header-inner
+  :margin-left 98px
+  
 #logo
   :background= "transparent" !image_logo "no-repeat scroll 0px 0px"
   :display block
-  :width 316px
+  :width 274px
   :height 64px
   :float left
   :margin-top 30px
@@ -183,24 +178,30 @@ ul.panes
 .article
   :color #555
   //+grid-system(12)
-  :padding 10px 20px
+  :padding 10px 20px 70px 20px
   :clear both
   :overflow auto
-  .heading
-    :font-size 1.4em
-    :font-family= !font_stack_georgia
-    :font-style italic
-    :font-weight bold
+  img
+    :display block
+    :margin-bottom 10px
+
+
+.heading
+  :overflow hidden
+  :position absolute
+  :top 20px
+  :z-index 1000
     
     
   
 .content
   +grid(5, 12)
   :float left
-  :text-align right
+  //:text-align right
   >h2
     :margin-top 10px
-    :font-size 1.2em
+    :font-size 1em
+
 .reversed
   .content
     :text-align left
@@ -211,7 +212,7 @@ ul.panes
   :text-align left
   +grid(3, 12)
   > p, > ul > li
-    :font= "0.9em/1.3" !font_family_sans_serif
+    :font= "0.8em/1.3" !font_family_sans_serif
   > h2
     :margin-top 1em
     :font= "normal bold 1em/1.5" !font_family_sans_serif_medium
@@ -220,8 +221,6 @@ ul.panes
   .sidebox
     //+grid(3, 16)
   .content
-    +grid(15, 16)
-    :margin-top -15px    
 #projects-list
   h2
     :font-style normal
@@ -257,16 +256,34 @@ ul.panes
   :display block
   :float left
   :margin 0px 15px 15px 0px
+  :background= "transparent" !image_photo_shadow "no-repeat left bottom scroll"
+  :height 108px
   img
-    :border 4px solid white
-    +box-shadow(2px 2px 6px #222)
-    +border-radius(5px)
+    :border 6px solid #fff
     
+    
+.photos
+  li
+    +display-inline-block
+    :margin-right 20px
+    :background= "transparent" !image_photo_shadow "no-repeat left bottom scroll"
+    :height 126px
+    a
+      img
+        :border 6px solid #fff
+      span
+        :text-align center
+        :display block
+        :background-color #fff
+        :font-size 1.1em
+        :color #333
+        :letter-spacing 0.05em
+      
     
 //--- Splash ---//
 #splash-photos
   ul
-    :height 386px
+    :height 366px
     :width 350px
     :overflow hidden
     li
@@ -306,7 +323,7 @@ div.description
   +grid-container
   :font-size 0.9em
   :font-family= !font_stack_helvetica
-  :padding-top 20px
+  //:padding-top 20px
   //:text-align center  
   a
     :text-decoration none

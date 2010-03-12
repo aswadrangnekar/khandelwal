@@ -18,10 +18,12 @@
 		{% block tag_wrapper_content %}
 		{% block tag_header %}
 		<div id="header">
-		  <img src="{{ MEDIA_URL }}image/bg/butterfly.gif" id="butterfly"/>  
-		  <a href="/" id="logo"></a>
-		  {% block tag_page_heading %}
-		  {% end %}		
+		  <div id="header-inner">
+		    <img src="{{ MEDIA_URL }}image/bg/butterfly.gif" id="butterfly"/>  
+		    <a href="/" id="logo"></a>
+		    {% block tag_page_heading %}
+		    {% end %}	
+	    </div>	
     </div>
 		{% end %}
 		{% block tag_trunk %}

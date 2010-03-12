@@ -6,7 +6,7 @@
 
 
 {% block tag_page_heading %}
-<img src="{{ MEDIA_URL }}image/heading/we_shape_your_dreams.png" title="We shape your dreams" />
+<img src="{{ MEDIA_URL }}image/heading/we_shape_your_dreams.png" title="We shape your dreams" class="heading" />
 {% end %}
 
 {% block tag_trunk_content %}
@@ -16,13 +16,15 @@
   <div class="article_inner">
     <div class="article">
       <div class="content">
-        <h1 class="heading">Specialising in building spaces that you will fall in love with.</h1>
+        <img src="{{ MEDIA_URL }}image/heading/home_sub_heading.png" title="We shape your dreams" />
         <h2>What is Lorem Ipsum?</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>    
+        <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker.</p>
+        <h2>Some sideheading</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
       <div class="sidebox">
-        <div id="splash-photos" class="photos" >
+        <div id="splash-photos" >
           <ul>
             <li id="photo1">
               <a href="/projects" ><img src="{{ MEDIA_URL }}image/photos/photo1.png" /></a>
