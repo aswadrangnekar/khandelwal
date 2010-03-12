@@ -45,6 +45,9 @@ IMAGE_FILES = Split("""
     image/heading/home_sub_heading.png
     image/heading/inquiry_sub_heading.png
     image/heading/project_sub_heading.png
+    image/bg/textfield_normal.png
+    image/bg/textfield_readonly.png
+    image/bg/button_overlay.png
 
     image/logo/en_US/text.png
     image/photos/first_tax_free.jpg
