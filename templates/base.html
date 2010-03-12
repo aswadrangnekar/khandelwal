@@ -18,8 +18,7 @@
 		{% block tag_wrapper_content %}
 		{% block tag_header %}
 		<div id="header">
-		  <div id="header-inner">
-		    <img src="{{ MEDIA_URL }}image/bg/butterfly.gif" id="butterfly"/>  
+		  <div id="header-inner">		     
 		    <a href="/" id="logo"></a>
 		    {% block tag_page_heading %}
 		    {% end %}	
@@ -28,6 +27,8 @@
 		{% end %}
 		{% block tag_trunk %}
 		<div id="trunk">
+		  <img src="{{ MEDIA_URL }}image/bg/butterfly.png" id="butterfly"/> 
+		  <img src="{{ MEDIA_URL }}image/bg/butterfly1.png" id="butterfly"/> 
 		  <div id="navigation">
 		    <ul id="navigation">
 		      <li><a href="/" class="{% block nav_home_class %}{% end %}" id="home"></a></li>

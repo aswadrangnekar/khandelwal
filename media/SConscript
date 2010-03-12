@@ -29,7 +29,9 @@ IMAGE_FILES = Split("""
     image/bg/radial_gradient.png
     image/bg/box.jpg
     image/bg/buildings.png
-    image/bg/butterfly.gif
+    image/bg/butterfly.png
+    image/bg/butterfly1.png
+    image/bg/bullet.png
     image/bg/photo_shadow.png
     image/button/menu.png
     image/button/nav.png

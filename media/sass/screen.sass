@@ -85,10 +85,10 @@ ul.panes
 //--- Navigation styles ---//
 #header
   +grid-container
-  :margin-top 20px
+  //:margin-top 20px
   :overflow auto
 #header-inner
-  :margin-left 98px
+  :margin-left 148px
   
 #logo
   :background= "transparent" !image_logo "no-repeat scroll 0px 0px"
@@ -98,11 +98,14 @@ ul.panes
   :float left
   :margin-top 30px
 #butterfly
-  //:position relative
-  //:top -46px
-  //:left -786px
-  :float left
-  :margin-right -50px
+  :position absolute
+  //:margin-left 870px
+  :z-index 40
+  //:float left
+  //:margin-right -50px
+#butterfly1
+  :position absolute
+  :z-index 150
 #navigation
   :float left
   :margin-top 40px
@@ -178,7 +181,7 @@ ul.panes
 .article
   :color #555
   //+grid-system(12)
-  :padding 10px 20px 70px 20px
+  :padding 10px 20px 70px 40px
   :clear both
   :overflow auto
   :min-height 370px
@@ -190,18 +193,20 @@ ul.panes
 .heading
   :overflow hidden
   :position absolute
-  :top 20px
+  :top -4px
   :z-index 100
     
     
   
 .content
-  +grid(5, 12)
+  +grid(4, 12)
   :float left
   //:text-align right
   >h2
     :margin-top 10px
     :font-size 1em
+    :background= "transparent" !image_h2_background "no-repeat scroll 0 center"
+    :padding-left 10px
 
 .reversed
   .content
