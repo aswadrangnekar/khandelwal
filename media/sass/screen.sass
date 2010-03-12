@@ -7,16 +7,17 @@ body
   :background= !color_background !image_body_background "repeat scroll 0px 0px"
   :font= "1em" !font_family_serif
   :color= !color_light_body_text
-p, blockquote, pre, li, dl
+p, blockquote, pre, dl
   :line-height 1.5
   :margin-bottom 1em
   :font-size 0.8em
-
 li, dl
   :line-height 1.5
   :margin-bottom 1em
   :font-size 0.9em
   
+
+
 p.intro
   //:text-indent 2.5em
   :font= "0.9em" !font_stack_georgia
@@ -105,13 +106,13 @@ ul.panes
   :margin-top 30px
 #butterfly
   :position absolute
-  //:margin-left 870px
+  :margin-left -80px
+  :margin-top -30px
   :z-index 40
-  //:float left
-  //:margin-right -50px
-#butterfly1
+#butterfly-group
   :position absolute
-  :z-index 150
+  :margin-left -960px
+  :z-index 40
 #navigation
   :float left
   :margin-top 40px
