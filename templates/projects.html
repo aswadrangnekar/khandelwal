@@ -4,35 +4,55 @@
 
 {% block nav_projects_class %}active{% end %}
 
+{% block tag_page_heading %}
+<img src="{{ MEDIA_URL }}image/heading/building_since_1980.png" title="Building since 1980." class="heading" />
+{% end %}
+
 
 {% block tag_trunk_content %}
-<div id="trunk-header">
-  <img src="{{ MEDIA_URL }}image/heading/building_since_1980.png" title="Building since 1980." width="350px" height="36px" />
-  <h2>More than 3 decades of building thousands of happy home owners.</h2>
-</div>
 <div id="top-transparent-area">
 </div>
-<div class="article">
-  <div class="sidebox">
-    {% block tag_sidebox_content %}
-      
-    {% end %}
-  </div>
-  <div class="content reversed">
-    {% block tag_project_content %}
-      <h2>Ongoing projects</h2>
-      <ul class="photos">
-      {% for p in ongoing_projects %}
-        <li><a href="/project/{{ p.slug }}"><img src="{{ p.cover_thumb_url }}" /><span>{{ p.title }}</span></a></li>
+<div class="article_wrapper">
+  <div class="article_inner">
+    <div class="article reversed">
+      <img src="{{ MEDIA_URL }}image/heading/project_sub_heading.png" title="More than 3 decades of building thousands of happy home owners." />
+      {% block tag_project_content %}
+        <ul class="tabs">
+          <li><a href="#ongoing" >Ongoing</a></li>
+          <li><a href="#upcoming" >Upcoming</a></li>
+          <li><a href="#completed" >Completed</a></li>
+        </ul>
+        <ul class="panes">
+          <li id="ongoing"
+            <ul class="photos">
+            {% for p in ongoing_projects %}
+              <li><a href="/project/{{ p.slug }}"><span>{{ p.title }}</span><img src="{{ p.cover_thumb_url }}" /></a></li>
+            {% end %}
+              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
+              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
+            </ul>
+          </li>
+          <li id="upcoming">
+            <ul class="photos">
+            {% for p in ongoing_projects %}
+              <li><a href="/project/{{ p.slug }}"><span>{{ p.title }}</span><img src="{{ p.cover_thumb_url }}" /></a></li>
+            {% end %}
+              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
+              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
+            </ul>
+          </li>
+          <li id="completed">
+            <ul class="photos">
+            {% for p in ongoing_projects %}
+              <li><a href="/project/{{ p.slug }}"><span>{{ p.title }}</span><img src="{{ p.cover_thumb_url }}" /></a></li>
+            {% end %}
+              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
+              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
+            </ul>
+          </li>
+        </ul>
       {% end %}
-      </ul>
-      <h2>Completed projects</h2>
-      <ul class="photos">
-      {% for p in completed_projects %}
-        <li><a href="/project/{{ p.slug }}"><img src="{{ p.cover_thumb_url }}" /><span>{{ p.title }}</span></a></li>
-      {% end %}
-      </ul>
-    {% end %}
+    </div>
   </div>
 </div>
 <div id="bottom-transparent-area">

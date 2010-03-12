@@ -30,6 +30,7 @@ IMAGE_FILES = Split("""
     image/bg/box.jpg
     image/bg/buildings.png
     image/bg/butterfly.gif
+    image/bg/photo_shadow.png
     image/button/menu.png
     image/button/nav.png
     image/button/see_more.png
@@ -39,6 +40,12 @@ IMAGE_FILES = Split("""
     image/heading/get_in_touch_with_us.png
     image/heading/know_more_about_us.png
     image/heading/need_something.png
+    image/heading/about.png
+    image/heading/contact_sub_heading.png
+    image/heading/home_sub_heading.png
+    image/heading/inquiry_sub_heading.png
+    image/heading/project_sub_heading.png
+
     image/logo/en_US/text.png
     image/photos/first_tax_free.jpg
     image/photos/gokuldham.jpg
