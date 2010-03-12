@@ -19,7 +19,7 @@
       <h2>Pictures and location map</h2>
       <ul class="photos">
         {% for photo in project.photos %}
-          <li><a href="{{ photo.picture_url }}" title="{{ photo.caption }}"> <span>{{ photo.caption }}</span><img src="{{ photo.thumb_url }}" /></a></li>
+          <li><a href="{{ photo.picture_url }}" title="{{ photo.caption }}"><img src="{{ photo.thumb_url }}" /><strong>{{ photo.caption }}</strong></a></li>
         {% end %}
       </ul>
     </li>
@@ -27,7 +27,7 @@
       <h2>Floor plans</h2>
       <ul class="photos">
         {% for floor_plan in project.floor_plans %}
-          <li><a href="{{ floor_plan.picture_url }}" title="{{ floor_plan.caption }}"> <span>{{ floor_plan.caption }}</span><img src="{{ floor_plan.thumb_url }}"  /></a></li>
+          <li><a href="{{ floor_plan.picture_url }}" title="{{ floor_plan.caption }}"><img src="{{ floor_plan.thumb_url }}"  /><strong>{{ floor_plan.caption }}</strong></a></li>
         {% end %}
       </ul>
     </li>

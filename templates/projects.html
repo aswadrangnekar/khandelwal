@@ -26,28 +26,22 @@
           <li id="ongoing"
             <ul class="photos">
             {% for p in ongoing_projects %}
-              <li><a href="/project/{{ p.slug }}"><span>{{ p.title }}</span><img src="{{ p.cover_thumb_url }}" /></a></li>
+              <li><a href="/project/{{ p.slug }}"><img src="{{ p.cover_thumb_url }}" /><strong>{{ p.title }}</strong></a></li>
             {% end %}
-              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
-              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
             </ul>
           </li>
           <li id="upcoming">
             <ul class="photos">
             {% for p in ongoing_projects %}
-              <li><a href="/project/{{ p.slug }}"><span>{{ p.title }}</span><img src="{{ p.cover_thumb_url }}" /></a></li>
+              <li><a href="/project/{{ p.slug }}"><img src="{{ p.cover_thumb_url }}" /><strong>{{ p.title }}</strong></a></li>
             {% end %}
-              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
-              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
             </ul>
           </li>
           <li id="completed">
             <ul class="photos">
             {% for p in ongoing_projects %}
-              <li><a href="/project/{{ p.slug }}"><span>{{ p.title }}</span><img src="{{ p.cover_thumb_url }}" /></a></li>
+              <li><a href="/project/{{ p.slug }}"><img src="{{ p.cover_thumb_url }}" /><strong>{{ p.title }}</strong></a></li>
             {% end %}
-              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
-              <li><a href="/project/savgan-heights"> <span>Savgan Heights</span> <img src="http://dl.dropbox.com/u/4350742/khandelwal/photos/thumb/savgan_heights/savgan_heights.jpg"></a></li>
             </ul>
           </li>
         </ul>

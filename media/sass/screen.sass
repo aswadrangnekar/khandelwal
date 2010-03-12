@@ -43,14 +43,14 @@ dt
 address
   span
     :display block  
-//a
-//  :color= !color_link
-//  :text-decoration none
-//a:hover
-//  :color= !color_link_hover
-//  :text-decoration underline
-//a:visited
-//  :color= !color_link_visited 
+a
+  :color= !color_link
+  //:text-decoration none
+a:hover
+  :color= !color_link_hover
+  //:text-decoration none
+a:visited
+  :color= !color_link_visited 
 
 
 //--- Tabs ---//
@@ -59,6 +59,7 @@ address
   :margin-top 10px
   li
     +display-inline-block
+    :margin-right 5px
     //:margin-bottom 0px
     a
       :background-color= !color_awesome_gray_dark
@@ -67,7 +68,7 @@ address
       :text-align center
       :padding 5px 10px
       :text-transform uppercase
-      :font-size 1.2em
+      :font-size 1em
     a:hover
       :background-color #74bbbd
     a.current
@@ -275,11 +276,15 @@ ul.panes
   li
     +display-inline-block
     :margin-right 20px
+    :height 105px
     :background= "transparent" !image_photo_shadow "no-repeat left bottom scroll"
-    :height 126px
+    //+box-shadow("1px 1px 8px #888")
     a
+      :display block
       img
-        :border 6px solid #fff
+        :border 4px solid #fff
+        +box-shadow("1px 1px 8px #888")
+           
       span
         :text-align center
         :display block
@@ -287,8 +292,11 @@ ul.panes
         :font-size 1.1em
         :color #333
         :letter-spacing 0.05em
-      
+    a:hover
+      +transform("scale(1.25)")
+      +transition("-webkit-transform 0.45s ease")
     
+
 //--- Splash ---//
 #splash-photos
   ul
@@ -319,6 +327,7 @@ div.description
   ul
     li
       :list-style disc inside
+
 //--- Footer ---//
 #buildings
   :background= "transparent" !image_footer_background "no-repeat scroll 0 0"
